@@ -16,7 +16,14 @@ n = 5438
 num = n
 while num > 0:
     last_digit = num % 10
-    print(last_digit)
+    # print(last_digit)
     num = num // 10
 
+# Logarithm-Based Approach
 
+from math import *
+
+num = 3456
+
+def countDigit():
+    return int(log10(num) + 1)
